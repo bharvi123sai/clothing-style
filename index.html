@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Clothing Styles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+header {
+    background-color: palegoldenrod;
+    color: rgb(39, 36, 36);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.clothing-item {
+    display: inline-block;
+    width: 45%;
+    margin: 1rem;
+    text-align: center;
+}
+
+.clothing-item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    border: black;
+}
+
+footer {
+    /* background-color: #333; */
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Modern Clothing Trends</h1>
+        <nav>
+            <ul>
+                <li><a href="#casual">Casual</a></li>
+                <li><a href="#formal">Formal</a></li>
+                <li><a href="#sportswear">Sportswear</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="casual">
+        <h2><u>Casual Styles</u></h2>
+        <div class="clothing-item">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/17-index-highwaistedoutfits-1553802851.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=1200:*" alt="Casual Clothing 1">
+            <p>Chill vibes with comfy jeans and t-shirts.</p>
+        </div>
+        <div class="clothing-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5EZx_cObO7PnRLxjLYsQPci7Wd1ifQcmLUQ&s" alt="Casual Clothing 2">
+            <p>Relaxed hoodies and sneakers for every day.</p>
+        </div>
+    </section>
+
+    <section id="formal">
+        <h2><u>Formal Styles</u></h2>
+        <div class="clothing-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM4w5p35_OflVKJcEs0DVB5PJgxRbSwn4mmA&s" alt="Formal Clothing 1">
+            <p>Sleek suits and dresses for formal events.</p>
+        </div>
+        <div class="clothing-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGoWhFyLb0DDrYg3QED_Z651uZIv_29l4JAQ&s" alt="Formal Clothing 2">
+            <p>Elegant black outfits for evening occasions.</p>
+        </div>
+    </section>
+
+    <section id="sportswear">
+        <h2><u>Sportswear Styles</u></h2>
+        <div class="clothing-item">
+            <img src="https://image.made-in-china.com/318f0j00FTURcELPRkoQ/MC8883-Loose-Fit-Cropped-Zipup-Pullover-mp4.webp" alt="Sportswear 1">
+            <p>Activewear for a gym or athleisure look.</p>
+        </div>
+        <div class="clothing-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO81t9uxTev4ppYug7n6OO6W7kQkk-MJ3cFQ&s" alt="Sportswear 2">
+            <p>Comfortable yet stylish workout gear.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Modern Clothing Trends</p>
+    </footer>
+
+    <script src="script.js">
+        
+document.addEventListener('DOMContentLoaded', () => {
+    const clothingItems = document.querySelectorAll('.clothing-item');
+
+    clothingItems.forEach(item => {
+        item.addEventListener('click', () => {
+            alert("This is a modern clothing style!");
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
